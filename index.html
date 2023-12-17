@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo"><img src="images/logo.png" height="80"></a>
+  <a href="#default" class="logotext"> LATUR BUS SERVICE</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#feature">Feature</a>
+    <a href="#gallary">Gallery</a>
+    <a href="#our-team">Our Agents</a>
+    
+  </div>
+</div>
+
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="images/1.jpg" style="width:100%">
+  <img class="mySlides" src="images/2.jpg" style="width:100%">
+  <img class="mySlides" src="images/3.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div id="feature">
+<center><h1>Feature</h1>
+	<p><b>Providing you the possible BUS and Wedding Services <br>To our Customer</b></p>
+
+</center>
+
+<div class="feature">
+	
+<a href="#"><img src="images/feature1.jpg" width="190" height="200" style="margin:50px;"></a>		
+
+	<a href="#"><img src="images/feature2.jpg" width="190" height="200" style="margin:50px;"></a>
+			
+	<a href="#"><img src="images/feature3.jpg"width="190"height="200" style="margin:50px;"> </a>
+								
+	<a href="#"><img src="images/feature4.jpg"width="190"height="200" style="margin:50px;"> </a>
+
+</div>
+</div>
+
+<div id ="gallary">
+
+<center><h1>Gallary</h1>
+	<p><b>Providing you the possible BUS and Wedding Services <br>To our Customer</b></p>
+
+</center>
+
+<div class="gallary">
+
+<img src="images/g1.jpg" width="190" height="200" style="margin:50px;">		
+
+<img src="images/g2.jpg" width="190" height="200" style="margin:50px;">
+			
+<img src="images/g3.jpg"width="190"height="200" style="margin:50px;"> 
+								
+<img src="images/g4.jpg"width="190"height="200" style="margin:50px;"> 
+
+<img src="images/g5.jpg"width="190"height="200" style="margin:50px;"> 
+
+<img src="images/g6.jpg"width="190"height="200" style="margin:50px;"> 
+
+<img src="images/g7.jpg"width="190"height="200" style="margin:50px;"> 
+
+<img src="images/g8.jpg"width="190"height="200" style="margin:50px;"> 
+
+</div>
+</div>
+
+<div id="our-team">
+
+<center><h1><b>Our Agents</b></h1>
+	<p><b>They will help you Solve your Problem<br>& Provide best Facility to you</b></p>
+</center>				
+
+<div class="feature">
+
+<img src="images/agt1.jpg"width="200"height="240" style="margin:50px;"> 
+<div class="text-block-1">
+       <p>Sagare Gajanan</p>
+   
+  </div>
+
+<img src="images/agt2.jpg "width="200"height="240" style="margin:50px;"> 
+<div class="text-block-2">
+       <p>Alandkar Nishant</p>
+    
+  </div>
+
+<img src="images/agt3.jpg "width="200"height="250" style="margin:30px;"> 
+
+<div class="text-block-3">
+       <p>Sonkawade Ram</p>
+    
+  </div>
+  
+  <img src="images/agt4.jpg "width="200"height="250" style="margin:30px;"> 
+
+<div class="text-block-4">
+       <p>Pratik das</p>
+    </div>
+  
+</div>					
+</div>
+
+<div class="footer">
+	  <p><b>Designed by:<br>Sagare gajanan :- (9359322340)<br>Alandkar nishant :- (8669186421)<br>Sonkawade Ram :- (7620458574)<br> Das Pratik :-(9158649863) <b></p>
+
+</div>
+
+
+</body>
+</html>
+

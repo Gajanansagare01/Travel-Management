@@ -1,0 +1,125 @@
+<html>
+<head>
+</head>
+<body style="background-color:#03fcf0;">
+<script>
+
+function reg()
+{
+	with(document.f1)
+	{
+		var s=document.getElementById("t1").value;
+		var r=/^[a-zA-Z ]+$/
+		var a=document.getElementById("t5").value;
+		var b=/^[789]\d{9}$/;
+		var e=document.getElementById("t4").value;
+		var f=/^[A-Za-z0-9]+@[A-Za-z0-9]+(?:\.[A-Za-z0-9-]+)*$/;
+		var z=document.getElementById("t7").value;
+		var x=/^[a-z]+@[0-9]+$/
+		
+		
+		
+		if(r.test(s))
+		{
+			document.getElementById("msg2").innerHTML="OK";
+			
+		}
+		else
+		{
+			document.getElementById("msg2").innerHTML="Please enter name";
+				
+		}
+		
+		if(a==" ")
+		{
+			document.getElementById("msg1").innerHTML="Plz enter number";
+			
+		}
+		if(b.test(a))
+		{
+			document.getElementById("msg1").innerHTML="OK";
+			
+		}
+		else
+		{
+			document.getElementById("msg1").innerHTML="Enter 10 digits numbers";
+				
+		}
+		if(e==" ")
+		{
+			document.getElementById("msg3").innerHTML="Plz enter EmailID";
+						
+		}
+		if(f.test(e))
+		{
+		document.getElementById("msg3").innerHTML="OK";		
+						
+		}
+		else
+		{
+		document.getElementById("msg3").innerHTML="Enter correct Email address";
+		
+		}
+
+		if(x.test(z))
+		{
+		document.getElementById("msg4").innerHTML="OK";
+		alert("*....Registration succesfully....*");
+		window.open('index.html','myAdWin', 'height=800, width=1400,left=500,top=500');
+			
+		}
+		else
+		{
+		document.getElementById("msg4").innerHTML="Password must be char,symbol,digits";
+		alert("*....Please Try again to fill fields....*");
+		return false;
+				
+		}
+			
+	}
+	
+}
+
+</script>
+
+<center>
+<form name="f1"  style="padding:100px;margin:50px;" border="5";>
+<fieldset style="background-color:#fc0356;">
+<h2>Registration Form</h2>
+<table>
+<tr><td>Enter Full Name :</td>
+<td><input type="text" id="t1" placeholder="Full name" required   /></td>
+<td><span id="msg2" style="color:blue" class="s"></span></td>
+</tr>
+<tr><td>Enter Address:</td>
+<td><input type="text" id="t2" placeholder=" Address" required  /></td>
+</tr>
+<tr><td>Enter Date of Birth:</td>
+<td><input type="date" id="t3"/></td>
+</tr>
+<tr><td>Enter Email Address:</td>
+<td><input type="text" id="t4" placeholder="Email Address" required  /></td>
+<td><span id="msg3" style="color:blue" class="p"></span></td
+</tr>
+<tr><td>Enter Mob No:</td>
+<td><input type="text" id="t5" placeholder="Mobile Number" required  /></td>
+<td><span id="msg1" style="color:blue" class="p"></span></td>
+</tr>
+<tr><td>Enter UserId:</td>
+<td><input type="text" id="t6" placeholder="Enter UserId" required  /></td>
+</tr>
+<tr><td>Enter Password:</td>
+<td><input type="password" id="t7" placeholder="Enter Password" required  /></td>
+<td><span id="msg4" style="color:blue" class="z"></span></td>
+</tr>
+<tr>
+<td colspan="6" align="center" ><input type="button" id="b1" value="Submit" onclick="reg()">
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+</center>
+</body>
+</html>
+
